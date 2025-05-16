@@ -31,13 +31,14 @@ class Customcart extends StatelessWidget {
     final bool showBatchText = ScreenSize.width > 768;
     return SizedBox(
       width: cartSize,
+      height: ScreenSize.height / 3,
       child: Card(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5)),
         child: Column(
           children: [
             Image.asset(
               image,
-              height: 140,
+              height: 130,
               width: double.infinity,
               fit: BoxFit.cover,
             ),
@@ -72,14 +73,14 @@ class Customcart extends StatelessWidget {
                 ],
               ),
             ),
-            Spacer(),
+            // Spacer(),
             Text(
               '$Description',
               style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
             ),
             Spacer(),
             SizedBox(
-              height: 35,
+              height: 26,
               width: cartSize,
               child: Padding(
                 padding: EdgeInsets.all(5),
